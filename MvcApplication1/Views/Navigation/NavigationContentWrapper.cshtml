@@ -1,0 +1,16 @@
+﻿@using DonnWeb.Models.Navigation;
+@model DonnWeb.Models.Navigation.NavigationItemsModel
+
+<ul class="nav nav-justified">
+    @foreach (var y in Model.ItemsInNavigation)
+    {
+        if (y is StandardNavigationItemModel)
+        {
+            @Html.Partial("~/Views/Navigation/StandardNavigationItem.cshtml", y);
+        }
+        else if (y is DropdownNavigationItem)
+        {
+            @Html.Partial("~/Views/Navigation/DropdownNavigationItem.cshtml", y);
+        }
+    }
+</ul>
