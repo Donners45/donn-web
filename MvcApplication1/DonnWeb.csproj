@@ -173,6 +173,7 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\ScoreController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -185,8 +186,11 @@
     <Compile Include="Models\Navigation\NavigationItemsModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UiControllers\UiNavigationController.cs" />
+    <Compile Include="UiControllers\UiScoreController.cs" />
+    <Compile Include="UIMappers\DropdownNavigationMapper.cs" />
     <Compile Include="UIMappers\INavigationMapper.cs" />
     <Compile Include="UIMappers\NavigationMapper.cs" />
+    <Compile Include="UIMappers\NavigationMapperFactory.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\css\bootstrap-theme.css" />

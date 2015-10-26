@@ -20,9 +20,9 @@ namespace DonnWeb.IoC
 
         public static void InitializeContainer()
         {            
-            ContainerContext.Register<INavigationMapper, NavigationMapper>(Lifestyle.Singleton);
             ContainerContext.Register<INavigationAdaptor, StaticNavigationAdaptor>(Lifestyle.Singleton);
             ContainerContext.Register<INavigationLogic, NavigationLogic>(Lifestyle.Singleton);
+            ContainerContext.Register<IScoreLogic, ScoreLogic>(Lifestyle.Singleton);
         }
          
     }

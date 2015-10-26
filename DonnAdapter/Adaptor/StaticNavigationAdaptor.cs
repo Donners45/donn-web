@@ -23,7 +23,7 @@ namespace DonnAdapter.Adaptor
             };
         }
 
-        public IEnumerable<INavigationItemDomain> GetNavigationItemsFromRepository()
+        public IEnumerable<INavigationItemDomain> GetNavigationItems()
         {
             IEnumerable<INavigationItemDomain> items = new List<INavigationItemDomain>() 
             {
@@ -49,18 +49,9 @@ namespace DonnAdapter.Adaptor
             return items;
         }
 
-        public INavigationItemDomain GetItemFromRepository(int NavigationItemId)
+        public INavigationItemDomain GetItemById(int NavigationItemId)
         {
            return StaticResource.SingleOrDefault(x => x.Id == NavigationItemId);
-
-            //foreach (INavigationItemDomain y in StaticResource)
-            //{
-            //    if (y.Id == NavigationItemId)
-            //    {
-            //        return y;
-            //    }
-            //}
-            //return null;
         }
     }
 }

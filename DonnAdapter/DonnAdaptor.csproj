@@ -49,6 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Adaptor\BlogAdaptor.cs" />
+    <Compile Include="Adaptor\ScoreAdaptor.cs" />
     <Compile Include="Adaptor\StaticNavigationAdaptor.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

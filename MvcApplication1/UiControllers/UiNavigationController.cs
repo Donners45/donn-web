@@ -13,10 +13,9 @@ namespace DonnWeb.UiControllers
         public INavigationLogic _navigationBusiness;
         public INavigationMapper _navMapper;
 
-        public UiNavigationController(INavigationLogic navigationLogic, INavigationMapper mapper) 
+        public UiNavigationController(INavigationLogic navigationLogic) 
         {
             _navigationBusiness = navigationLogic;
-            _navMapper = mapper;
         }
 
         public NavigationItemsModel GetNavigationModel()
@@ -24,6 +23,8 @@ namespace DonnWeb.UiControllers
             NavigationItemsModel model = new NavigationItemsModel(){
                 ItemsInNavigation   = new List<INavigationItem>()
             };
+            
+            var mapperFactory = new NavigationMapperFactory();
 
             var items = _navigationBusiness.getNavigationItems();
 
@@ -32,6 +33,7 @@ namespace DonnWeb.UiControllers
                 var builtItems = new List<INavigationItem>();
                 foreach (var item in items)
                 {
+                    _navMapper = mapperFactory.GetMapperForType(item);
                     builtItems.Add(_navMapper.MapDomainModelToUi(item));
                 }
                 model.ItemsInNavigation = builtItems;

@@ -42,6 +42,7 @@
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Caching" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -49,6 +50,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessLogic\Cache\ICacheService.cs" />
+    <Compile Include="BusinessLogic\Cache\InMemoryCacheBase.cs" />
+    <Compile Include="BusinessLogic\Implementations\ScoreLogic.cs" />
+    <Compile Include="BusinessLogic\Interface\IScoreLogic.cs" />
     <Compile Include="BusinessLogic\Implementations\NavigationLogic.cs" />
     <Compile Include="BusinessLogic\Interface\INavigationLogic.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

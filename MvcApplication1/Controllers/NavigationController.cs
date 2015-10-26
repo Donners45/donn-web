@@ -6,7 +6,7 @@ using System.Web.Mvc;
 using DonnWeb.Models.Navigation;
 using DonnWeb.UiControllers;
 using DonnBusiness.BusinessLogic.Interface;
-using DonnBusiness.BusinessLogic.Implementations;
+
 using DonnAdapter.Adaptor;
 using DonnDomain.Interfaces;
 using DonnWeb.IoC;
@@ -23,10 +23,8 @@ namespace DonnWeb.Controllers
 
         // GET: /Navigation/
         public ActionResult Index()
-        {
-        
+        { 
             NavigationItemsModel test = _controller.GetNavigationModel();
-
             return PartialView("NavigationContentWrapper", test);
         }
     }

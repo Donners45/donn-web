@@ -6,27 +6,21 @@ using System.Threading.Tasks;
 using DonnDomain.Interfaces;
 using DonnDomain.Objects.Interface;
 
-namespace DonnBusiness.BusinessLogic.Implementations
+namespace DonnBusiness.BusinessLogic.Interface
 {
     public class NavigationLogic : Interface.INavigationLogic
     {
-
         private INavigationAdaptor _adaptor;
-
 
         public NavigationLogic(INavigationAdaptor navAdaptor)
         {
             _adaptor = navAdaptor;
         }
 
-
         public IEnumerable<INavigationItemDomain> getNavigationItems()
         {
-
-            var items = _adaptor.GetNavigationItemsFromRepository();
+            var items = _adaptor.GetNavigationItems();
             return items;
-
         }
-
     }
 }

@@ -12,7 +12,6 @@ using SimpleInjector.Integration.Web.Mvc;
 using DonnDomain.Interfaces;
 using DonnAdapter.Adaptor;
 using DonnBusiness.BusinessLogic.Interface;
-using DonnBusiness.BusinessLogic.Implementations;
 using DonnWeb.UIMappers;
 
 namespace DonnWeb

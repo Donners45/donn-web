@@ -5,7 +5,7 @@
     <title>@ViewBag.Title</title>
     <link href="~/favicon.ico" rel="shortcut icon" type="image/x-icon" />
     <meta name="viewport" content="width=device-width" />
-@*    @Styles.Render("~/Content/css")
+    @*    @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")*@
 </head>
 
@@ -16,16 +16,16 @@
 
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#master-nav-wrapper" aria-expanded="true" aria-controls="navbar">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">DonnWeb</a>
-          </div>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#master-nav-wrapper" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">DonnWeb</a>
+                </div>
                 <div id="master-nav-wrapper">
-                @Html.Action("Index", "Navigation")
+                    @Html.Action("Index", "Navigation")
                 </div>
 
             </nav>
@@ -53,13 +53,13 @@
             </div>
         </footer>
 
-@*        @Scripts.Render("~/bundles/jquery")
+        @*        @Scripts.Render("~/bundles/jquery")
         @Scripts.Render("~/Content/Bootstrap")
         @Scripts.Render("~/Content/css")*@
 
-            @Scripts.Render("~/bundles/jquery")
-    @Styles.Render("~/Content/bootstrapcss")
-    @Scripts.Render("~/bundles/bootstrapjs")
+        @Scripts.Render("~/bundles/jquery")
+        @Styles.Render("~/Content/bootstrapcss")
+        @Scripts.Render("~/bundles/bootstrapjs")
 
         @RenderSection("scripts", required: false)
     </div>

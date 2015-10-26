@@ -10,6 +10,9 @@ namespace DonnTests
     [TestClass]
     public class UnitTest1
     {
+
+        // Set up Rhino Mocks !!
+
         [TestMethod]
         public void WhenCreateNewNavigationItemsModel_ExpectNavItemsNotNull()
         {
@@ -29,16 +32,15 @@ namespace DonnTests
         {
 
             StaticNavigationAdaptor adap = new StaticNavigationAdaptor();
-            var x = adap.GetItemFromRepository(1);
+            var x = adap.GetItemById(1);
             Assert.AreEqual(1, x.Id);
         }
 
         [TestMethod]
         public void WhenICallgetItemFromRepo_AndStaticResouceExitsts_ExpectItem2()
         {
-
             StaticNavigationAdaptor adap = new StaticNavigationAdaptor();
-            var x = adap.GetItemFromRepository(2);
+            var x = adap.GetItemById(2);
             Assert.AreEqual(2, x.Id);
         }
 
@@ -48,7 +50,7 @@ namespace DonnTests
         {
 
             StaticNavigationAdaptor adap = new StaticNavigationAdaptor();
-            var x = adap.GetItemFromRepository(5);
+            var x = adap.GetItemById(5);
             Assert.IsNull(x);
         }
     }

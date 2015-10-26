@@ -10,7 +10,7 @@ namespace DonnDomain.Interfaces
     public interface INavigationAdaptor
     {
 
-        IEnumerable<INavigationItemDomain> GetNavigationItemsFromRepository();
-        Objects.Interface.INavigationItemDomain GetItemFromRepository(int NavigationItemId);
+        IEnumerable<INavigationItemDomain> GetNavigationItems();
+        Objects.Interface.INavigationItemDomain GetItemById(int NavigationItemId);
     }
 }
