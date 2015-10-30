@@ -11,5 +11,6 @@ namespace DonnBusiness.BusinessLogic.Interface
     {
         IEnumerable<TotalScoreDomain> GetAllScores();
         TotalScoreDomain GetLatestScore();
+        double GetScorePercentage(double currentScore, double maxScore);
     }
 }

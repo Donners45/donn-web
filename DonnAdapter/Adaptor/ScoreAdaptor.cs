@@ -11,7 +11,7 @@ namespace DonnAdapter.Adaptor
    {
        public TotalScoreDomain GetLatestScore()
        {
-           return new TotalScoreDomain() { Updated = DateTime.Now, CurrentScore = 0};
+           return new TotalScoreDomain() { Updated = DateTime.Now, CurrentScore = 600000};
        }
 
        public IEnumerable<TotalScoreDomain> GetAllScores()

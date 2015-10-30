@@ -1,0 +1,13 @@
+﻿@model  DonnWeb.Models.Score.TotalScore
+
+
+<div id="current-score-wrapper">
+
+  <div class="progress">
+    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="@Model.CurrentScore" aria-valuemin="@Model.MinScore" aria-valuemax="@Model.MaxScore" style="width: @Model.CurrentScorePercentage%">
+        <span class="sr-only"></span>
+    </div>
+  </div>
+
+
+</div>

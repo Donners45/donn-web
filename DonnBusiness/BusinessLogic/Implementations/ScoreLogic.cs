@@ -34,5 +34,11 @@ namespace DonnBusiness.BusinessLogic.Implementations
         {
             return _adaptor.GetAllScores();
         }
+
+        public double GetScorePercentage(double currentScore, double maxScore)
+        {
+            return currentScore / maxScore * 100;
+        }
+
     }
 }

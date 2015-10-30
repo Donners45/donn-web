@@ -22,7 +22,9 @@ namespace DonnWeb.IoC
         {            
             ContainerContext.Register<INavigationAdaptor, StaticNavigationAdaptor>(Lifestyle.Singleton);
             ContainerContext.Register<INavigationLogic, NavigationLogic>(Lifestyle.Singleton);
+            ContainerContext.Register<IScoreAdaptor, ScoreAdaptor>(Lifestyle.Singleton);
             ContainerContext.Register<IScoreLogic, ScoreLogic>(Lifestyle.Singleton);
+            ContainerContext.Register<ITotalScoreMapper, TotalScoreMapper>(Lifestyle.Singleton);
         }
          
     }

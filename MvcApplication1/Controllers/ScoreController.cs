@@ -22,8 +22,9 @@ namespace DonnWeb.Controllers
         // GET: /Score/
         public ActionResult Index()
         {
-            // _UiController.Get();
-            return View();
+            var m = _UiController.GetModel();
+
+            return PartialView("TotalScore", m);
         }
 
     }
