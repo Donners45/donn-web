@@ -1,0 +1,12 @@
+﻿body {
+font-family: monaco, Consolas, 'Lucida Console', monospace;
+color:white;
+}
+
+.section {
+    text-align:center;
+}
+
+.stand-out {
+color:black!important;
+}

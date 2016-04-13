@@ -52,9 +52,11 @@
     <Compile Include="Interfaces\IBlogAdaptor.cs" />
     <Compile Include="Interfaces\INavigationAdaptor.cs" />
     <Compile Include="Interfaces\IScoreAdaptor.cs" />
+    <Compile Include="Interfaces\IScoreUpdateAdapter.cs" />
     <Compile Include="Objects\BlogItemDomain.cs" />
     <Compile Include="Objects\DropdownNavigationItemDomain.cs" />
     <Compile Include="Objects\Interface\INavigationItemDomain.cs" />
+    <Compile Include="Objects\ScoreUpdateDomain.cs" />
     <Compile Include="Objects\StandardNavigationItemDomain.cs" />
     <Compile Include="Objects\TotalScoreDomain.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

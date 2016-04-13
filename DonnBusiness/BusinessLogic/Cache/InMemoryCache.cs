@@ -8,19 +8,22 @@ using System.Runtime.Caching;
 
 namespace DonnBusiness.BusinessLogic.Cache
 {
-    public abstract class InMemoryCacheBase<T> : ICacheService<T>
+    public class InMemoryCache : ICacheService
     {
-        public T Get(string cacheKey)
+        public T This<T>(string cacheKey, Func<T> getFromRepository)
         {
             T item = (T)MemoryCache.Default.Get(cacheKey);
             if (item == null || item.Equals(default(T))) 
             {
-                item = GetFromRepository();
+                item = getFromRepository();
                 MemoryCache.Default.Add(cacheKey, item, DateTime.Now.AddMinutes(10));
             }
             return item;
         }
 
-        public abstract T GetFromRepository();
+        public void Flush()
+        {
+            // MemoryCache Flush?
+        }
     }
 }

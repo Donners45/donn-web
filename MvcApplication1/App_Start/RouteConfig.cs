@@ -19,12 +19,8 @@ namespace DonnWeb
                 defaults: new { controller = "Navigation", action = "LoadNavigationItem", Id = UrlParameter.Optional }
                 );
 
-            routes.MapRoute(
-                name: "Homeyadda",
-                url: "home-page",
-                defaults: new { controller = "Home", action = "LoadHomePage" }
-            );
-
+            routes.MapRoute(name: "BlogItem", url: "Blog/Get/{uri}", defaults: new { controller = "Blog", action="ByUri", uri = UrlParameter.Optional});
+            
             routes.MapRoute(
                 name: "Default",
                 url: "{controller}/{action}/{id}",

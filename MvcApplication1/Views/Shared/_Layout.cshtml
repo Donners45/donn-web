@@ -10,9 +10,9 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid">
 
-        <div class="masthead">
+       @* <div class="masthead">
 
             <nav class="navbar navbar-default">
                 <div class="navbar-header">
@@ -25,19 +25,18 @@
                     <a class="navbar-brand" href="#">DonnWeb</a>
                 </div>
                 <div id="master-nav-wrapper">
-                    @Html.Action("Index", "Navigation")
+                  
                 </div>
 
             </nav>
-
-        </div>
+@Html.Action("Index", "Navigation")
+        </div>*@  
         <div id="body">
-            <div class="jumbotron">
+
 
 
                 @RenderSection("featured", required: false)
 
-            </div>
             <div class="row">
                 <section class="content-wrapper main-content clear-fix">
                     @RenderBody()
@@ -58,8 +57,16 @@
         @Scripts.Render("~/Content/css")*@
 
         @Scripts.Render("~/bundles/jquery")
-        @Styles.Render("~/Content/bootstrapcss")
+   @*    @Scripts.Render("~/bundles/fullpage")*@
+
+       @Styles.Render("~/Content/bootstrapcss")
         @Scripts.Render("~/bundles/bootstrapjs")
+        @Scripts.Render("~/bundles/libs")
+
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.css" />
+       <link rel="stylesheet" href="/Content/css/DonnStyle.css" />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.7.6/jquery.fullPage.js" ></script>
 
         @RenderSection("scripts", required: false)
     </div>

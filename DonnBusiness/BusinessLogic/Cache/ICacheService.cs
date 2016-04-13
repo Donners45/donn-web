@@ -6,8 +6,9 @@ using System.Threading.Tasks;
 
 namespace DonnBusiness.BusinessLogic.Cache
 {
-    interface ICacheService<T>
+    public interface ICacheService
     {
-        T Get(string cacheKey);
+        T This<T>(string cacheKey, Func<T> getFromRepository);
+        void Flush();
     }
 }

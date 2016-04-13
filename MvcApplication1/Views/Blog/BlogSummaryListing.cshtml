@@ -1,0 +1,19 @@
+﻿@using DonnWeb.Models.Blog;
+@model IEnumerable<BlogItem>
+
+
+<div class="blog-summary-listing-wrapper">
+
+    @foreach (var bi in @Model)
+    {
+        
+        <a href="/blog/get/@bi.BlogUri">
+            <div class="blog-summary-item-wrapper">
+                <div class="blog-title">@bi.Title</div>
+                <div class="blog-summary">@bi.SnippetSummary </div>
+            </div>
+        </a> 
+    }
+
+</div>
+

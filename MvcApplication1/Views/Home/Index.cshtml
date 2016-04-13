@@ -1,18 +1,50 @@
-﻿@{
-    ViewBag.Title = "Home Page 1231231";
+﻿@{    ViewBag.Title = "Home Page 1231231";
 }
 
+@*<div class="parallax-window" data-parallax="scroll" data-image-src="Images/KashmereLogo.jpg" data-height="200"></div>
 
-@section featured {
+<div class="bg" style="min-height: 400px;"> background:url('/Images/KashmereLogo.jpg') no-repeat center center fixed;background-size:cover;background:url('/Images/kash-bg.jpg') no-repeat center center;
+<div class="row">
+</div>*@
+
+<div id="fullpage">
+
+    <div class="section" style="" data-anchor="f">
+   
+        <h1 class="stand-out">Kashmere</h1>
+    </div>
 
 
-
-}
-      
-@Html.Action("Index", "Score")
-      <div> Home Page 101 </div> 
+    <div class ="section" style="background:url('/Images/kash-patch-bg.jpg') no-repeat center 46%;background-size:cover;">
         
 
+        Section 2
+
+        @Html.Action("Index", "Blog")
+
+    </div>
+
+    <div class="section" style="background:url('/Images/kash-crew-bg.jpg') no-repeat center center;background-size:cover;"> 
+        Section 3
+
+    </div>
+
+</div>
 
 
-    
+@section scripts {
+    <script>
+
+      //  $('.bg').parallax({ imageSrc: '/Images/KashmereLogo.jpg' });
+
+            $('#fullpage').fullpage({
+                navigation: true,
+                navigationPosition: 'right',
+                navigationTooltips: ['Kashmere', 'What\'s On', 'About'],
+                anchors: ['f', 's', 't']
+            });
+
+    </script>
+
+}
+

@@ -10,18 +10,20 @@ using System.Threading.Tasks;
 
 namespace DonnBusiness.BusinessLogic.Implementations
 {
-    public class ScoreLogic : InMemoryCacheBase<IEnumerable<TotalScoreDomain>>, IScoreLogic
+    public class ScoreLogic : IScoreLogic
     {
         IScoreAdaptor _adaptor;
+        private readonly ICacheService _cache;
 
-        public ScoreLogic(IScoreAdaptor adaptor)
+        public ScoreLogic(IScoreAdaptor adaptor, ICacheService cache)
         {
             _adaptor = adaptor;
+            _cache = cache;
         }
 
         public IEnumerable<TotalScoreDomain> GetAllScores()
         {
-            var scores = Get("Scores.AllScores.NoOrder");
+            var scores = _cache.This("Scores.AllScores.NoOrder", GetAllFromRepository);
             return scores.OrderByDescending(x => x.Updated);
         }
 
@@ -30,7 +32,7 @@ namespace DonnBusiness.BusinessLogic.Implementations
             return _adaptor.GetLatestScore();
         }
 
-        public override IEnumerable<TotalScoreDomain> GetFromRepository()
+        private IEnumerable<TotalScoreDomain> GetAllFromRepository()
         {
             return _adaptor.GetAllScores();
         }

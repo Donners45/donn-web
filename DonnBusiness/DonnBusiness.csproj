@@ -51,8 +51,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BusinessLogic\Cache\ICacheService.cs" />
-    <Compile Include="BusinessLogic\Cache\InMemoryCacheBase.cs" />
+    <Compile Include="BusinessLogic\Cache\InMemoryCache.cs" />
+    <Compile Include="BusinessLogic\Implementations\BlogLogic.cs" />
     <Compile Include="BusinessLogic\Implementations\ScoreLogic.cs" />
+    <Compile Include="BusinessLogic\Interface\IBlogLogic.cs" />
     <Compile Include="BusinessLogic\Interface\IScoreLogic.cs" />
     <Compile Include="BusinessLogic\Implementations\NavigationLogic.cs" />
     <Compile Include="BusinessLogic\Interface\INavigationLogic.cs" />
