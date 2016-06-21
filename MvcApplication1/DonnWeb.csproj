@@ -178,6 +178,7 @@
     <Compile Include="Controllers\BlogController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\NavigationController.cs" />
+    <Compile Include="Controllers\RenderIntent.cs" />
     <Compile Include="Controllers\ScoreController.cs" />
     <Compile Include="Controllers\UpComingEventController.cs" />
     <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
@@ -355,6 +356,8 @@
     <None Include="Properties\PublishProfiles\DevPub.pubxml" />
     <Content Include="Views\Blog\BlogSummaryListing.cshtml" />
     <Content Include="Views\Blog\BlogItem.cshtml" />
+    <Content Include="Views\Home\Index_Donn.cshtml" />
+    <Content Include="Views\Shared\_Layout_Donn.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

@@ -6,7 +6,7 @@
 
  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">@Model.DisplayText<span class="caret"></span></a>
 
-    <ul class="dropdown-menu">
+    <ul class="dropdown-menu col-xs-12">
             @foreach (var item in @Model.ItemCollection)
             {
                 <li><a href="@item.Action">@item.DisplayText</a></li>

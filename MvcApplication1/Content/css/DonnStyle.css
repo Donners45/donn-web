@@ -1,6 +1,6 @@
 ﻿body {
 font-family: monaco, Consolas, 'Lucida Console', monospace;
-color:white;
+color:black;
 }
 
 .section {
@@ -9,4 +9,12 @@ color:white;
 
 .stand-out {
 color:black!important;
+}
+
+
+footer {
+    position: fixed;
+    height: 50px;
+    bottom: 0;
+    width: 100%;
 }

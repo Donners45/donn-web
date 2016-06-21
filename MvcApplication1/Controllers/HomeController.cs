@@ -31,7 +31,7 @@ namespace DonnWeb.Controllers
 
         public ActionResult LoadHomePage()
         {
-            return View("Index");
+            return View("Index_Donn");
         }
     }
 }
