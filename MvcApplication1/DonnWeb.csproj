@@ -20,6 +20,7 @@
     <IISExpressAnonymousAuthentication />
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -208,6 +209,7 @@
     <Compile Include="UIMappers\TotalScoreMapper.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Images\codepen.png" />
     <Content Include="Content\css\bootstrap-theme.css" />
     <Content Include="Content\css\bootstrap-theme.min.css" />
     <Content Include="Content\css\bootstrap.css" />
@@ -215,6 +217,12 @@
     <Content Include="Content\css\DonnStyle.css" />
     <Content Include="Content\css\jquery.fullPage.css" />
     <Content Include="Content\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Content\sass-styles\main.css" />
+    <Content Include="Content\sass-styles\main.min.css">
+      <DependentUpon>main.css</DependentUpon>
+    </Content>
+    <Content Include="Images\GitHub.png" />
+    <Content Include="Images\so-icon.png" />
     <Content Include="Images\bird.jpg" />
     <Content Include="Images\kash-crew-bg.jpg" />
     <Content Include="Images\kash-foto-bg.jpg" />
@@ -353,6 +361,14 @@
     <Content Include="Views\Score\TotalScore.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Content\sass-styles\main.css.map" />
+    <Content Include="Content\sass-styles\main.scss" />
+    <Content Include="Content\sass-styles\modules\_colors.scss" />
+    <Content Include="Content\sass-styles\_core-imports.scss" />
+    <None Include="compilerconfig.json" />
+    <None Include="compilerconfig.json.defaults">
+      <DependentUpon>compilerconfig.json</DependentUpon>
+    </None>
     <None Include="Properties\PublishProfiles\DevPub.pubxml" />
     <Content Include="Views\Blog\BlogSummaryListing.cshtml" />
     <Content Include="Views\Blog\BlogItem.cshtml" />

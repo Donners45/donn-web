@@ -10,32 +10,55 @@
 <body>
     <div class="container-fluid">
 
-      <div class="masthead">
-        @Html.Action("Index", "Navigation")
-      </div>  
-                          @RenderBody()
+        <div class="masthead">
+            @*   @Html.Action("Index", "Navigation")*@
+        </div>
+
+        @RenderBody()
 
         <footer>
-            <div class="content-wrapper">
-                <div class="float-left">
-                    <p>&copy; @DateTime.Now.Year - DonnDevelopment</p>
+
+            <div class="footer-links">
+                <div class="links">
+                    <a href="http://stackoverflow.com/users/4245136/donners45" target="_blank"><div class="social"><img class="stack" src="~/Images/so-icon.png" width="38" /><span>Stack Overflow</span></div></a>
+
+                    <a href="http://codepen.io/DONNERS45/" target="_blank"><div class="social"><img class="pen" src="~/Images/codepen.png" width="38" /><span>Code Pen</span></div></a>
+
+                    <a href="https://github.com/Donners45" target="_blank"><div class="social"><img class="git" src="~/Images/GitHub.png" width="38" /><span>GitHub</span></div></a>
                 </div>
+                <p>&copy; @DateTime.Now.Year - Find me on. . .</p>
             </div>
         </footer>
+    </div>
 
-        @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/jquery")
 
 
-       @Styles.Render("~/Content/bootstrapcss")
-        @Scripts.Render("~/bundles/bootstrapjs")
-        @Scripts.Render("~/bundles/libs")
+    @Styles.Render("~/Content/bootstrapcss")
+    @Scripts.Render("~/bundles/bootstrapjs")
+    @Scripts.Render("~/bundles/libs")
+    @Styles.Render("~/bundles/main-style")
 
-         
-       <link rel="stylesheet" href="/Content/css/DonnStyle.css" />
-            
-        @RenderSection("scripts", required: false)
+    @RenderSection("scripts", required: false)
+
+    <script>
+        function autoHeight() {
+            $('footer').css('margin-top',
+                  $(document).height()
+                  - ($('.masthead').height() + $('.main-wrapper').height())
+                  - $('footer').height() - 55
+                );
+        }
+        $(document).ready(function () {
+            autoHeight();
+        });
+    </script>
+
     </div>
 </body>
+
+
+
 
 
 </html>

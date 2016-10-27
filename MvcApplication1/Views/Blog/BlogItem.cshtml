@@ -1,9 +1,25 @@
 ﻿@using DonnWeb.Models.Blog;
 @model BlogItem
 
+@{
+    ViewBag.Title = "sean-donnelly.net";
+    Layout = "~/Views/Shared/_Layout_Donn.cshtml";
+}
 
-@Model.Title
-
-@Html.Raw(@Model.RawHtmlContent)
 
 
+
+<div class="main-wrapper">
+    <div class="artical-wrap">
+        <h3>@Model.Title</h3>
+        <div class="artical">
+           @Html.Raw(@Model.RawHtmlContent)
+        </div>
+
+    </div>
+    <div class="push"></div>
+</div>
+
+@section closehead{
+    @Html.Raw(Model.TitleClose)
+}

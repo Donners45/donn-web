@@ -13,6 +13,7 @@ namespace DonnWeb.Models.Blog
         public int BlogId { get; set; }
         public string RawHtmlContent { get; set; }
         public string Title { get; set; }
+        public string TitleClose { get; set; }
         public DateTime DateCreated { get; set; }
         public DateTime DateListed { get; set; }
         public string SnippetSummary { get; set; }
