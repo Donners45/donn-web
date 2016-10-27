@@ -10,7 +10,5 @@ namespace DonnDomain.Interfaces
     public interface IBlogAdaptor
     {
         IEnumerable<BlogItemDomain> GetBlogItems();
-        //BlogItemDomain GetBlogById(int Id);
-        //IEnumerable<BlogItemDomain> GetBlogItemsByDateListed(DateTime dateListed);
     }
 }

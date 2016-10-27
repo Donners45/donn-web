@@ -9,3 +9,15 @@ C:\Users\Sean\documents\visual studio 2012\Projects\MvcApplication1\DonnDomain\b
 C:\Users\Sean\documents\visual studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\SimpleInjector.xml
 C:\Users\Sean\documents\visual studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\SimpleInjector.Integration.Web.xml
 C:\Users\Sean\documents\visual studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\SimpleInjector.Integration.Web.Mvc.xml
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\System.Web.Mvc.dll
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\System.Web.Razor.dll
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\System.Web.WebPages.Razor.dll
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\System.Web.WebPages.dll
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\System.Web.WebPages.Deployment.dll
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\Microsoft.Web.Infrastructure.xml
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\System.Web.Mvc.xml
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\System.Web.Razor.xml
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\System.Web.WebPages.Razor.xml
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\System.Web.WebPages.xml
+C:\Users\Sean\Documents\Visual Studio 2012\Projects\MvcApplication1\DonnDomain\bin\Debug\System.Web.WebPages.Deployment.xml
